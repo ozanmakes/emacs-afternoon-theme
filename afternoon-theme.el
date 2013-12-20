@@ -153,7 +153,7 @@
    `(flx-highlight-face ((,class (:inherit nil :foreground ,yellow :weight bold :underline nil))))
 
    ;; which-function
-   `(which-func ((,class (:foreground ,blue :background nil :weight bold))))
+   `(which-func ((,class (:foreground ,blue :background nil))))
 
    ;; Emacs interface
    `(cursor ((,class (:background ,orange))))
@@ -172,7 +172,7 @@
                                            :background ,current-line :weight normal
                                            :box (:line-width 1 :color ,foreground)))))
    `(mode-line-emphasis ((,class (:foreground ,foreground :slant italic))))
-   `(mode-line-highlight ((,class (:foreground ,purple :box nil :weight bold))))
+   `(mode-line-highlight ((,class (:foreground ,purple :box nil))))
    `(minibuffer-prompt ((,class (:foreground ,blue))))
    `(region ((,class (:background ,selection))))
    `(secondary-selection ((,class (:background ,current-line))))
