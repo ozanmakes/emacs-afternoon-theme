@@ -15,8 +15,9 @@ Use `M-x customize-themes` to activate it, or put the following in your Emacs co
     (load-theme 'afternoon t)
 
 
-## Screenshot
-![](https://raw.github.com/osener/emacs-afternoon-theme/master/screenshot.png)
+## Screenshots
+![](https://raw.github.com/osener/emacs-afternoon-theme/master/screenshot1.png)
+![](https://raw.github.com/osener/emacs-afternoon-theme/master/screenshot2.png)
 
 
 ## Credits
