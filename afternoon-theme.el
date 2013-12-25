@@ -43,20 +43,21 @@
 (deftheme afternoon
   "Dark color theme with a deep blue background")
 
-(let ((class '((class color) (min-colors 89)))
+(let* ((class '((class color) (min-colors 89)))
+       (256color (eq (display-color-cells (selected-frame)) 256))
 
-      (background "#181a26")
-      (current-line "#14151E")
-      (selection "#103050")
-      (foreground "#eaeaea")
-      (comment "#969896")
-      (red "#d54e53")
-      (orange "goldenrod")
-      (yellow "#e7c547")
-      (green "DarkOliveGreen3")
-      (aqua "#70c0b1")
-      (blue "DeepSkyBlue1")
-      (purple "#c397d8"))
+       (background (if 256color "#1c1c1c" "#181a26"))
+       (current-line (if 256color "#121212" "#14151E"))
+       (selection "#103050")
+       (foreground "#eaeaea")
+       (comment "#969896")
+       (red "#d54e53")
+       (orange "goldenrod")
+       (yellow "#e7c547")
+       (green "DarkOliveGreen3")
+       (aqua "#70c0b1")
+       (blue "DeepSkyBlue1")
+       (purple "#c397d8"))
 
   (custom-theme-set-faces
    'afternoon
