@@ -48,6 +48,7 @@
 
        (background (if 256color "#1c1c1c" "#181a26"))
        (current-line (if 256color "#121212" "#14151E"))
+       (block-background (if 256color "#262626" "#1F2232"))
        (selection "#103050")
        (foreground "#eaeaea")
        (comment "#969896")
@@ -324,7 +325,7 @@
    `(org-agenda-done ((,class (:foreground ,green))))
    `(org-agenda-dimmed-todo-face ((,class (:foreground ,comment))))
    `(org-block ((,class (:foreground ,orange))))
-   `(org-block-background ((,class (:background "#1F2232"))))
+   `(org-block-background ((,class (:background ,block-background))))
    `(org-code ((,class (:foreground ,yellow))))
    `(org-column ((,class (:background ,current-line))))
    `(org-column-title ((,class (:inherit org-column :weight bold :underline t))))
