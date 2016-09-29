@@ -93,8 +93,22 @@
    `(flycheck-warning ((,class (:underline (:style wave :color ,orange)))))
 
    ;; Flymake
-   `(flymake-warnline ((,class (:underline (:style wave :color ,orange) :background ,background))))
-   `(flymake-errline ((,class (:underline (:style wave :color ,red) :background ,background))))
+   `(flymake-errline
+     ((((supports :underline (:style line :color ,red)))
+       (:underline (:style line :color ,red)
+                   :inherit unspecified :foreground unspecified :background unspecified))
+      (t (:foreground ,red :weight bold :underline t))))
+   `(flymake-warnline
+     ((((supports :underline (:style line :color ,orange)))
+       (:underline (:style line :color ,orange)
+                   :inherit unspecified :foreground unspecified :background unspecified))
+      (t (:foreground ,orange :weight bold :underline t))))
+   `(flymake-infoline
+     ((((supports :underline (:style line :color ,green)))
+       (:underline (:style line :color ,green)
+                   :inherit unspecified :foreground unspecified :background unspecified))
+      (t (:foreground ,green :weight bold :underline t))))
+
 
    ;; Clojure errors
    `(clojure-test-failure-face ((,class (:background nil :inherit flymake-warnline))))
