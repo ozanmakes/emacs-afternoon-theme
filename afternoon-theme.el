@@ -564,6 +564,11 @@
    `(erc-timestamp-face ((,class (:foreground ,aqua))))
    `(erc-keyword-face ((,class (:foreground ,green))))
 
+   ;; realgud
+   `(realgud-overlay-arrow1 ((,class (:foreground ,green))))
+   `(realgud-overlay-arrow2 ((,class (:foreground ,yellow))))
+   `(realgud-overlay-arrow3 ((,class (:foreground ,orange))))
+
    ;; twittering-mode
    `(twittering-username-face ((,class (:inherit erc-pal-face))))
    `(twittering-uri-face ((,class (:foreground ,blue :inherit link))))
